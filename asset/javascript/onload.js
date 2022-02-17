@@ -36,7 +36,7 @@ for (i = 0; i < 121; i++) {
         } while (check.includes(index) == true);
         check.push(index);
 
-        document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'><img src='asset/img/logo/templatelogo.jpg'class='standardimage p-2'></div><div class='botcard text-center'><p class='p-0 m-0'>"+index+"</p><h4>Company Name</h4><button type='button' class='buttonstyle1' data-bs-toggle='modal'data-bs-target='#exampleModal'>More Info</button></div></div>";
+        document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'><img src='asset/img/logo/templatelogo.jpg'class='standardimage p-2'></div><div class='botcard text-center'><p class='p-0 m-0'>"+index+"</p><h4>Company Name</h4><button type='button' class='buttonstyle1 cardbutton' id=button"+index+">More Info</button></div></div>";
 
         zstatus = Math.floor((Math.random() * 4) + 1);
         if (zstatus == 2) {

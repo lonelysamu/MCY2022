@@ -6,11 +6,6 @@
     --dark:black;
 }
 
-body{
-    width: 3302px;
-    height: 3302px; 
-}
-
 .cardbase{
     position: relative;
     border: 1px solid black;
@@ -65,6 +60,10 @@ width: auto ;
     margin-left: 600px !important;
     margin-top: 350px !important;
 
+}
+
+.contentsection{
+    min-height: 100vh;
 }
 
 .budgetotop{
@@ -123,6 +122,17 @@ width: auto ;
     box-shadow: none;
     transition: 0.5s;
 }
+
+.nextbooth{
+    transition: 0.5s;
+    background-color: white;
+}
+
+.nextbooth:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 5px 10px #88888873;
+}
 .test{
     border: 1px solid red;
 }
@@ -130,3 +140,31 @@ width: auto ;
 .black{
     background-color: black!important;
 }
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+    overflow: hidden; /* HIDE SCROLL BAR */
+
+  }
+   
+  /* (B) MOVING TICKER WRAPPER */
+  .hmove { display: flex; }
+  
+  /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+  .hitem {
+    flex-shrink: 0;
+    width: 100px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 3px;
+    text-align: center;
+  }
+   
+  /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+  /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+  @keyframes tickerh {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .hmove { animation: tickerh linear 10s infinite; }
+  .hmove:hover { animation-play-state: paused; }
