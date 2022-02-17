@@ -141,6 +141,10 @@ width: auto ;
     background-color: black!important;
 }
 
+.smokybg{
+    background-color: whitesmoke;
+}
+
 /* (A) FIXED WRAPPER */
 .hwrap {
     overflow: hidden; /* HIDE SCROLL BAR */

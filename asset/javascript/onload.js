@@ -9,7 +9,7 @@ for (i = 0; i < 121; i++) {
         document.querySelector("#altcontainer").innerHTML += "<div class='cardbase green clickable'><div class='topcard text-center'></div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
     }
     else if (i == 49) {
-        document.querySelector("#altcontainer").innerHTML += "<div class='cardbase blue clickable'><div class='topcard text-center'>" + (i) + "</div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
+        document.querySelector("#altcontainer").innerHTML += "<div class='cardbase blue clickable'><div class='topcard text-center'></div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
     }
     else if (i == 50) {
         document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'> <h1>Auditorium</h1> </div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
