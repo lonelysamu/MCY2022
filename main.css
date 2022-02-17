@@ -1,0 +1,132 @@
+:root{
+    --blue:#2d3a90;
+    --orange:#eb782c;
+    --green:#1db14c;
+    --main:white;
+    --dark:black;
+}
+
+.cardbase{
+    position: relative;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.clickable:hover{
+    transform: translateZ(100px) rotateY(180deg);
+    transition: 0.5s;
+}
+
+.topcard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(10px);
+    width: 80%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+
+
+}
+
+.botcard{
+
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(-10px) scaleX(-1);
+    width: 80%;
+}
+
+#container3d{
+width: auto ;
+
+}
+
+.section{
+ 
+    width: 3302px;
+    height: 3302px;
+    border: 1px solid none;
+    max-width: none;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateX(30deg) rotateZ(30deg) ;
+    margin-left: 600px !important;
+    margin-top: 350px !important;
+
+}
+
+.budgetotop{
+    transform: translateZ(100px);
+}
+.budgetobottom{
+    transform: translateZ(-100px);
+}
+
+.blue{
+    background-color: var(--blue);
+    color: white;
+}
+
+.orange{
+    background-color: var(--orange);
+}
+
+.green{
+    background-color: var(--green);
+    color: white;
+}
+
+.standardimage{
+    width: 100%;
+    height: auto;
+}
+.iconimg{
+    width: 30px;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.iconimg:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.nostyle{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+}
+
+.buttonstyle1{
+    background-color: var(--blue);
+    color: white;
+    box-shadow: none;
+    border: none;
+    transition: 0.5s;
+}
+.buttonstyle1:hover{
+    background-color: var(--green);
+    border: none;
+    box-shadow: none;
+    transition: 0.5s;
+}
+.test{
+    border: 1px solid red;
+}
+
+.black{
+    background-color: black!important;
+}
+
+.modal{
+    right:0 !important;
+    bottom:0 !important;
+}
