@@ -6,6 +6,11 @@
     --dark:black;
 }
 
+body{
+    width: 3302px;
+    height: 3302px; 
+}
+
 .cardbase{
     position: relative;
     border: 1px solid black;
@@ -124,9 +129,4 @@ width: auto ;
 
 .black{
     background-color: black!important;
-}
-
-.modal{
-width: 100vw;
-height: 100vh;
 }
