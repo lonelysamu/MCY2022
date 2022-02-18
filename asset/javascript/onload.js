@@ -12,7 +12,7 @@ for (i = 0; i < 121; i++) {
         document.querySelector("#altcontainer").innerHTML += "<div class='cardbase blue clickable'><div class='topcard text-center'></div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
     }
     else if (i == 50) {
-        document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'> <h1>Auditorium</h1> </div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
+        document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'> <h1>Auditorium</h1> </div><div class='botcard text-center'><p>Watch what is happening for MCY 2022 in the auditorium!</p><a class='nostyle' href='auditorium.html'><button type='button' class='buttonstyle1 auditoriumbutton'>Go To Auditorium</button></a></div></div>";
     }
     else if (i == 59) {
         document.querySelector("#altcontainer").innerHTML += "<div class='cardbase orange clickable'><div class='topcard text-center'></div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
