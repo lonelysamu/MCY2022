@@ -10,7 +10,7 @@ document.querySelector('#carousellogo').addEventListener('click', (e) => {
         window.location.href = 'booth.html?bi=' + boothindex;
     }
     else if (e.target.classList.contains("backbutton") == true) {
-        window.location.href = 'index.html'
+        window.location.href = 'lobby.html'
     }
 
 })
