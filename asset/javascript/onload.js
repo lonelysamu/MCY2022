@@ -21,7 +21,7 @@ for (i = 0; i < 121; i++) {
         document.querySelector("#altcontainer").innerHTML += "<div class='cardbase orange clickable'><div class='topcard text-center'></div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
     }
     else if (i == 70) {
-        document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'> <h1>Tentang MCY</h1> </div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
+        document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'> <h1>Tentang MCY</h1> </div><div class='botcard text-center'><h1>About MCY</h1></div></div>";
     }
     else if (i == 71) {
         document.querySelector("#altcontainer").innerHTML += "<div class='cardbase blue clickable'><div class='topcard text-center'></div><div class='botcard text-start d-flex flex-wrap align-content-center'><p class='p-0 m-0'>test</p></div></div>";
