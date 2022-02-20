@@ -50,7 +50,7 @@ else {
 }
 
 /*Carousel*/
-for (i = 0; i < 20; i++) {
+for (i = 0; i < 110; i++) {
     do {
         index = Math.floor((Math.random() * carddb.length) + 0);  
     } while (index == boothnumber);
