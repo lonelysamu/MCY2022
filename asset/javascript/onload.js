@@ -31,19 +31,32 @@ for (i = 0; i < 121; i++) {
     }
 
     else {
-        do {
-            index = Math.floor((Math.random() * 121) + 1);
-        } while (check.includes(index) == true);
-        check.push(index);
-
-        document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'><img src='asset/img/logo/templatelogo.jpg'class='standardimage p-2'></div><div class='botcard text-center'><p class='p-0 m-0'>"+index+"</p><h4>Company Name</h4><button type='button' class='buttonstyle1 cardbutton' id=button"+index+">More Info</button></div></div>";
-
-        zstatus = Math.floor((Math.random() * 4) + 1);
-        if (zstatus == 2) {
-            document.querySelectorAll(".cardbase")[i].classList.add("budgetotop");
+        if(check.length != (carddb.length + 9)){
+            do {
+                index = Math.floor((Math.random() * carddb.length) + 0);
+            } while (check.includes(index) == true);
+            check.push(index);
+    
+            document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'><img src='"+carddb[index][1]+"'class='standardimage p-2'></div><div class='botcard text-center'><p class='p-0 m-0'>"+carddb[index][0]+"</p><h4>"+carddb[index][2]+"</h4><button type='button' class='buttonstyle1 cardbutton' id=button"+carddb[index][0]+">More Info</button></div></div>";
+    
+            zstatus = Math.floor((Math.random() * 4) + 1);
+            if (zstatus == 2) {
+                document.querySelectorAll(".cardbase")[i].classList.add("budgetotop");
+            }
+            else if (zstatus == 3) {
+                document.querySelectorAll(".cardbase")[i].classList.add("budgetobottom");
+            }
         }
-        else if (zstatus == 3) {
-            document.querySelectorAll(".cardbase")[i].classList.add("budgetobottom");
+        else{
+            index = Math.floor((Math.random() * carddb.length) + 0);
+            document.querySelector("#altcontainer").innerHTML += "<div class='cardbase clickable'><div class='topcard text-center'><img src='"+carddb[index][1]+"'class='standardimage p-2'></div><div class='botcard text-center'><p class='p-0 m-0'>"+carddb[index][0]+"</p><h4>"+carddb[index][2]+"</h4><button type='button' class='buttonstyle1 cardbutton' id=button"+carddb[index][0]+">More Info</button></div></div>";
+            zstatus = Math.floor((Math.random() * 4) + 1);
+            if (zstatus == 2) {
+                document.querySelectorAll(".cardbase")[i].classList.add("budgetotop");
+            }
+            else if (zstatus == 3) {
+                document.querySelectorAll(".cardbase")[i].classList.add("budgetobottom");
+            }
         }
 
     }
