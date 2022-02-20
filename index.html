@@ -1,38 +1,85 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-      <div class="container">
-          <div class="row p-0 m-0 contentsection justify-content-center align-content-center">
-              <div class="col-12 text-center">
-                  <h1>Landing, Login & Registration Page<br>     Coming Soon</h1>
-                  <a href="lobby.html" class="nostyle">
-                    <button class="buttonstyle1">
-                        Go to Lobby
-                    </button>
-                </a>
-              </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>MCY 2022 - Log Masuk</title>
+</head>
+
+<body>
+  <div class="container-fluid p-0 m-0 ">
+    <div class="row p-0 m-0 contentsection justify-content-center align-content-center pt-5 pb-5">
+
+      <div class="col-11 col-md-5 d-flex align-items-center">
+        <div class="row p-0 m-0 align-items-center justify-content-center justify-content-md-start">
+          <div class="col-10 hideori fadefromleft2 text-center text-md-start d-none d-md-block mb-4">
+            <h3>Selamat Datang Ke</h3>
           </div>
+          <div class="col-11 col-md-10 col-xl-5 hideori fadefromleft3 text-center text-md-start">
+            <img src="asset\img\logo\mcy.png" class="standardimage" alt="">
+          </div>
+          <div class="col-11 hideori fadefromleft4 text-center text-md-start d-none d-md-block mt-4">
+            <p>Program Pengkomersialan R&D Negara atau Tahun Pengkomersialan Malaysia merupakan program untuk
+              melonjakkan hasil penyelidikan, pembangunan dan inovasi (R,D&I) daripada universiti,institusi,agensi
+              penyelidikan tempatan sebagai penjana kekayaan melalui proses pengkomersialan.</p>
+          </div>
+        </div>
       </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+      <div
+        class="col-11 col-md-5 col-lg-4 col-xxl-3 p-2 pt-4 pb-4 white floatingcard text-center d-flex justify-content-center align-content-center hideori fadefromtop1 ">
+        <div class="row p-0 m-0 justify-content-center align-content-center">
+          <div class="col-12">
+            <h3>Log Masuk</h3>
+            <p>Tolong log masuk untuk mneyertai MCY 2022</p>
+          </div>
+          <div class="col-12 mt-5">
+            <form class="row p-0 m-0 justify-content-center align-items-center" action="/action_page.php">
+              <label class="col-12" for="fname">e-mel:</label><br>
+              <input class="col-12 text-center floateffect" type="text" id="Uname" name="Uname"
+                value="abu@gmail.com"><br>
+              <label class="col-12 mt-4" for="lname">Kata Laluan:</label><br>
+              <input class="col-12 text-center floateffect" type="password" id="passwprd" name="passwprd"
+                value="1234567890"><br><br>
+              <input class="col-12 mt-4 buttonstyle1" type="submit" value="Log Masuk">
+            </form>
+          </div>
+          <div class="col-12 mt-5">
+            <a href="register.html" class="nostyle">
+              <button class="buttonstyle2">
+                Daftar
+              </button>
+            </a>
+            <a href="forgetpassword.html" class="nostyle">
+              <button class="buttonstyle2">
+                Lupa Kata Laluan
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
