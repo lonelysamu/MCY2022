@@ -10,11 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <title>MCY 2022 - Pendaftaran</title>
+    <title>MCY 2021 - Registration</title>
 </head>
 
 <body>
-    <div class="container-fluid p-0 m-0 smokybg">
+    <div class="container-fluid p-0 m-0 smokybg anchor">
         <div class="row p-0 m-0 contentsection justify-content-center align-content-center pt-5 pb-5">
             <div
                 class="col-11 col-md-5 col-lg-4 col-xxl-3 p-2 pt-4 pb-4 white floatingcard text-center d-flex justify-content-center align-content-center hideori fadefromtop1 ">
@@ -25,24 +25,46 @@
                         </a>
                     </div>
                     <div class="col-12">
-                        <h3>Pendaftaran Baru</h3>
+                        <h3><span class="BM">Pendaftaran Baru </span>
+                            <span class="ENG d-none"> Registration</span>
+                        </h3>
                     </div>
                     <div class="col-12 mt-5">
                         <form class="row p-0 m-0 justify-content-center align-items-center" action="/action_page.php">
-                            <label class="col-12" for="Pname">Nama:</label>
-                            <input class="col-12 text-center floateffect" type="text" id="Pname" name="Pname" value="mohd abu">
-                            <label class="col-12 mt-4" for="Uname">e-mel:</label>
-                            <input class="col-12 text-center floateffect" type="email" id="Uname" name="Uname" value="abu@gmail.com">
-                            <label class="col-12 mt-4" for="password">Kata Laluan:</label>
-                            <input class="col-12 text-center floateffect" type="password" id="password" name="passwprd" value="1234567890">
-                            <label class="col-12 mt-4" for="Cpassword">Taip Semula Kata Laluan:</label>
-                            <input class="col-12 text-center floateffect" type="password" id="Cpassword" name="Cpasswprd" value="1234567890">
-                            <label class="col-12 mt-4" for="organisation">Organisasi</label>
-                            <input class="col-12 text-center floateffect" type="text" id="organisation" name="organisation" value="MohdAbu sdn bhd">
-                            <label class="col-12 mt-4" for="Role">Jawatan / Pekerjaan</label>
-                            <input class="col-12 text-center floateffect" type="text" id="Role" name="Role" value="Eksekutif">
+                            <label class="col-12" for="Pname">
+                                <span class="BM">Nama: </span>
+                                <span class="ENG d-none"> Name:</span></label>
+                            <input class="col-12 text-center floateffect" type="text" id="Pname" name="Pname"
+                                value="mohd abu">
+                            <label class="col-12 mt-4" for="Uname">
+                                <span class="BM">e-mel: </span>
+                                <span class="ENG d-none">e-mail:</span></label>
+                            <input class="col-12 text-center floateffect" type="email" id="Uname" name="Uname"
+                                value="abu@gmail.com">
+                            <label class="col-12 mt-4" for="password">
+                                <span class="BM"> Kata Laluan:</span>
+                                <span class="ENG d-none">Password:</span></label>
+                            <input class="col-12 text-center floateffect" type="password" id="password" name="passwprd"
+                                value="1234567890">
+                            <label class="col-12 mt-4" for="Cpassword">
+                                <span class="BM">Taip Semula Kata Laluan: </span>
+                                <span class="ENG d-none"> Retype Your Password:</span></label>
+                            <input class="col-12 text-center floateffect" type="password" id="Cpassword"
+                                name="Cpasswprd" value="1234567890">
+                            <label class="col-12 mt-4" for="organisation">
+                                <span class="BM"> Organisasi:</span>
+                                <span class="ENG d-none">Organisation:</span></label>
+                            <input class="col-12 text-center floateffect" type="text" id="organisation"
+                                name="organisation" value="MohdAbu sdn bhd">
+                            <label class="col-12 mt-4" for="Role">
+                                <span class="BM">Jawatan / Pekerjaan </span>
+                                <span class="ENG d-none"> Role / Position</span></label>
+                            <input class="col-12 text-center floateffect" type="text" id="Role" name="Role"
+                                value="Eksekutif">
 
-                            <label class="col-12 mt-4" for="state">Negara:</label>
+                            <label class="col-12 mt-4" for="state">
+                                <span class="BM"> Negara:</span>
+                                <span class="ENG d-none"> Nationality:</span></label>
                             <select class="floateffect" id="country" name="country">
                                 <option value="Malaysia">Malaysia</option>
                                 <option value="Afganistan">Afghanistan</option>
@@ -290,42 +312,48 @@
                                 <option value="Zaire">Zaire</option>
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
-                             </select>
-
-
-                            <label class="col-12 mt-4" for="state">Negeri:</label>
-                            <select id="state" name="state" class="floateffect">
-                              <option value="Joh">Johor</option>
-                              <option value="Ked">Kedah</option>
-                              <option value="Kel">Kelantan</option>
-                              <option value="Mel">Melaka</option>
-                              <option value="NS">Negeri Sembilan</option>
-                              <option value="Pah">Pahang</option>
-                              <option value="Pen">Penang</option>
-                              <option value="Perak">Perak</option>
-                              <option value="Perlis">Perlis</option>
-                              <option value="Sab">Sabah</option>
-                              <option value="Sar">Sarawak</option>
-                              <option value="Sel">Selangor</option>
-                              <option value="Ter">Terengganu</option>
-                              <option value="KL">Kuala Lumpur</option>
-                              <option value="Lab">Labuan</option>
-                              <option value="Put">Putrajaya</option>
-                              <option value="Put">Luar Malaysia</option>
                             </select>
-                            
+
+
+                            <label class="col-12 mt-4" for="state">
+                                <span class="BM">Negeri:</span>
+                                <span class="ENG d-none">State:</span></label>
+                            <select id="state" name="state" class="floateffect">
+                                <option value="Joh">Johor</option>
+                                <option value="Ked">Kedah</option>
+                                <option value="Kel">Kelantan</option>
+                                <option value="Mel">Melaka</option>
+                                <option value="NS">Negeri Sembilan</option>
+                                <option value="Pah">Pahang</option>
+                                <option value="Pen">Penang</option>
+                                <option value="Perak">Perak</option>
+                                <option value="Perlis">Perlis</option>
+                                <option value="Sab">Sabah</option>
+                                <option value="Sar">Sarawak</option>
+                                <option value="Sel">Selangor</option>
+                                <option value="Ter">Terengganu</option>
+                                <option value="KL">Kuala Lumpur</option>
+                                <option value="Lab">Labuan</option>
+                                <option value="Put">Putrajaya</option>
+                                <option value="Put">
+                                    <span class="BM">Luar Malaysia </span>
+                                    <span class="ENG d-none">Not Malaysian</span></option>
+                            </select>
+
                             <input class="col-12 mt-5 buttonstyle1" type="submit" value="Daftar">
                         </form>
                     </div>
                     <div class="col-12 mt-5">
-                        <a href="index.html" class="nostyle">
+                        <a href="index.html" class="nostyle" id="loginlink">
                             <button class="buttonstyle2">
-                                Log Masuk
+                                <span class="BM">Log Masuk </span>
+                                <span class="ENG d-none">Log In</span>
                             </button>
                         </a>
-                        <a href="forgetpassword.html" class="nostyle">
+                        <a href="forgetpassword.html" class="nostyle" id="forgetpasswordlink">
                             <button class="buttonstyle2">
-                                Lupa Kata Laluan
+                                <span class="BM">Lupa Kata Laluan </span>
+                                <span class="ENG d-none">Forgot Password</span>
                             </button>
                         </a>
                     </div>
@@ -334,6 +362,12 @@
         </div>
     </div>
 
+    <div class="langtotop p-4" id="langselector">
+        <button class="buttonstyle3" id="engbutton">ENG</button>
+        <button class="buttonstyle3 buttonstyle1active" id="bmbutton">BM</button>
+    </div>
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -341,11 +375,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <script src="asset\javascript\langselector.js"></script>
 </body>
 
 </html>
